@@ -32,7 +32,7 @@ This command will execute the necessary scripts to start the compiler and conver
 ## Screenshots
 
 ![Screenshot 1](screenshots/screenshot1.png)
-*The main screen of compiler z*
+
 
 ## Contributing
 Contributions to Compiler Z are welcome! If you want to contribute to the project, please follow these steps:
