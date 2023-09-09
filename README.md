@@ -1,6 +1,6 @@
 # Compiler-Z
 Compiler-Z is a compiler that generates native Android (XML, Kotlin) and web (HTML, CSS, JavaScript) from Flutter code.
-It is developed using ANTLR4 with ExpressJs.
+It has been developed using ANTLR4 with ExpressJs.
 Compiler-Z is easy to use, just select your Flutter source files and click the button.You will get two separate folders: one for web and one for Android.
 
 ## Table of Contents
