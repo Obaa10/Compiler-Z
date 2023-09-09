@@ -6,6 +6,7 @@ Compiler Z is a compiler built on ANTLR4 that enables the conversion of Flutter 
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Screen shots](#Screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -28,6 +29,10 @@ To run Compiler Z, use the following command:
 ```npm run start```
 This command will execute the necessary scripts to start the compiler and convert Flutter code to Android and web platforms.
 
+## Screenshots
+
+![Screenshot 1](screenshots/screenshot1.png)
+*The main screen of compiler z*
 
 ## Contributing
 Contributions to Compiler Z are welcome! If you want to contribute to the project, please follow these steps:
