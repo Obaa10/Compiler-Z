@@ -10,7 +10,6 @@ Compiler-Z is easy to use, just select your Flutter source files and click the b
   - [Usage](#usage)
   - [Screen shots](#Screenshots)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
@@ -46,8 +45,3 @@ Contributions to Compiler Z are welcome! If you want to contribute to the projec
 5. Submit a pull request to the main repository, explaining your changes.
 Please ensure that you adhere to the project's coding conventions and follow the established Git workflow.
 
-
-## License
-The Compiler Z project is licensed under the MIT License.
-
-``` Please note that this is a template, and you may want to modify or add more sections based on your project's specific requirements or documentation needs.```
