@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333333;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #666666;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .button {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #666666;
+        }
+        .plant-image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: auto;
+        }
+        .plant-image-left {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div style="text-align: center;">
+    <h1>Welcome to the compiler planet</h1>
+    <br>
+    <h2>please choice which method you want</h2>
+    <br>
+    <form action="./code" method="GET">
+        <button class="button">Convert single code</button>
+    </form>
+    <br><br><br><br>
+    <form action="./files" method="GET">
+        <button class="button">Convert files</button>
+    </form>
+</div>
+<img class="plant-image" src="https://freesvg.org/img/planet-remix-fixed.png" alt="Cartoon plant image">
+<img class="plant-image-left" src="https://www.svgrepo.com/show/407349/ringed-planet.svg" alt="Plant image">
+</body>
+</html>

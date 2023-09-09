@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333333;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #666666;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .button {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #666666;
+        }
+
+        .plant-image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: auto;
+        }
+
+        .plant-image-left {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: auto;
+        }
+        input[type="text"], input[type="fileName"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333333;
+        }
+        .custom-file-upload {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333333;
+            color: #ffffff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .custom-file-upload:hover {
+            background-color: #666666;
+        }
+        input[type="submit"] {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #666666;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        input[type="submit"] {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #666666;
+        }
+    </style>
+
+</head>
+<body>
+<form action="/convertCode" method="POST">
+    <center>
+        <fieldset>
+            <h1>Flutter generator</h1>
+            <button  class="button"  type="submit">Submit</button>
+            <label style="display: table-cell; vertical-align: middle; height: 50px;" for="fileName">
+                file name must be:
+            </label>
+            <input id="fileName" name="fileName" required >
+            </input>
+            <br><br>
+            <label style="display: table-cell; vertical-align: middle; height: 50px;" for="filePath">
+                file path must be:
+            </label>
+            <input id="filePath" name="filePath" required >
+            </input>
+            <br><br>
+            <label style="display: table-cell; vertical-align: middle; height: 50px;" for="code">
+                enter your code here
+            </label>
+            <textarea id="code" name="code" required cols="110" rows="30">
+            </textarea>
+        </fieldset>
+    </center>
+</form>
+</body>
+</html>

@@ -1,0 +1,146 @@
+class signup extends StatelessWidget {
+  TextEditingController fullNameController = TextEditingController();
+  TextEditingController locationController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController genderController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+  TextEditingController checkPasswordController = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('SignUp Page'),
+      ),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            const Text(
+              'Welcome to the SignUp Page!',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Full name',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            TextField(
+              controller: fullNameController,
+              obscureText: false,
+              decoration: const InputDecoration(
+                hintText: 'full name',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'location',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            TextField(
+              controller: locationController,
+              obscureText: true,
+              decoration: const InputDecoration(
+                hintText: 'location',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'gender',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            TextField(
+              controller: genderController,
+              obscureText: false,
+              decoration: const InputDecoration(
+                hintText: 'gender',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Email address',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            TextField(
+              controller: emailController,
+              obscureText: true,
+              decoration: const InputDecoration(
+                hintText: 'email',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'password',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            TextField(
+              controller: passwordController,
+              obscureText: true,
+              decoration: const InputDecoration(
+                hintText: 'Password',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text('check password',
+                style: TextStyle(
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                )),
+            TextField(
+              controller: checkPasswordController,
+              obscureText: true,
+              decoration: const InputDecoration(
+                hintText: 'check password',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>
+                        homePage(email: fullNameController.text)));
+              },
+              child: const Text('Signup',
+                  style: TextStyle(
+                    fontSize: 10,
+                  )),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => login()));
+              },
+              child: const Text('SignIn',
+                  style: TextStyle(
+                    fontSize: 10,
+                  )),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

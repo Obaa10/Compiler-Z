@@ -1,0 +1,11 @@
+class SimpleTextPage extends StatelessWidget {
+  @override
+  Widget build() {
+    return Center(
+        child: Text(
+          'This is the first test with anas and tarek',
+          style: TextStyle(fontSize: 24),
+        ),
+    );
+  }
+}

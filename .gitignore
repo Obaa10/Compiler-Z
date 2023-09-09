@@ -1,0 +1,12 @@
+# Miscellaneous
+*.class
+*.log
+*.tokens
+*.interp
+
+*.ts
+
+/node_modules/
+/output/android
+/output/web
+/uploads/
